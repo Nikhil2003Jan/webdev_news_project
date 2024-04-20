@@ -11,41 +11,49 @@ body{
 }
 p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.4;
+    line-height: 1.4rem;
+}
+ul{
+    list-style: none;
 }
 .main-nav{
+    height: 50px;
+    margin-inline: auto;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     padding-block: 8px;
 }
 nav{
-    background-color: #3aafa9;
+    background-color: #1c1c1c;
     box-shadow: 0 1.5px 4px #000000;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 93%;
+    z-index: 90;
 }
 .logo img{
-    width: 30px;
-    height: 25px;
+    width: 120px;
+    height: 73px;
+    margin: -14px;
+    margin-left: 0%;
 }
 .ul1{
     list-style-type: none;
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     
 }
 .nav-link ul{
-    font-weight: bold
-    ;
+    font-family:serif;
+    font-weight:bold;
     display: flex;
     gap: 15px;
 }
 .hover-nav:hover{
-    color: #fbfbfb;
+    color: #fd800b;
 }
 .hover-nav:active{
     color: rgb(78, 23, 84);
@@ -53,22 +61,19 @@ nav{
 .hover-nav:visited{
     color: rgb(255, 255, 255);
 }
-.nav-item.active{
-    color: rgb(1, 43, 97);
+.hover-nav.active{
+    color: rgb(242, 122, 24);
 }
 .search-bar{
     padding-right: 20px;
     
 }
-.active{
-    color: white;
-}
 .news-input{
     width: 220px;
     height:32px;
-    border-radius: 4px;
-    padding-inline: 5px;
-    border: 2px solid black;
+    border-radius: 15px;
+    padding-inline: 10px;
+    border:2px  solid black;
 }
 .home{
     text-decoration: underline;
@@ -82,7 +87,7 @@ nav{
     width: 60px;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
 }
 .search-button:hover{
@@ -90,21 +95,22 @@ nav{
 }
 main{
     padding-block:20px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 .main-card{
-    background-color: #4dede0;
+    background-color:#bfbfbf;
     display: flex;
     padding-left:20px;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: start;
     row-gap: 20px;
 }
 .card{
+    margin-top: 10px;
     background-color: rgb(255, 255, 255);
     width: 360px;
-    min-height: 400px;
+    height: 400px;
     box-shadow: 0 0 4px;
     border-radius: 4px;
     cursor: pointer;
@@ -113,7 +119,7 @@ main{
 }
 .card:hover{
     box-shadow:1px 1px 8px rgb(185, 223, 221) ;
-    background-color:#f9fdff;
+    background-color:#b1b1b1;
     transform: translateY(-2px);
 }
 .card-header img{
